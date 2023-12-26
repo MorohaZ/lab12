@@ -4,12 +4,7 @@
 using namespace std;
 
 template<typename S>
-void mySwap(S &x,S &y){
-	S temp;
-	temp = x;
-	x = y;
-	y = temp;
-}
+void mySwap(S &x,S &y);
 
 
 int main(){
@@ -40,3 +35,10 @@ int main(){
 	return 0;
 }
 
+template<typename Su>
+void mySwap(Su &x,Su &y){
+	Su temp;
+	temp = x;
+	x = y;
+	y = temp;
+}
