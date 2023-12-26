@@ -1,6 +1,16 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
+
+template<typename S>
+void mySwap(S &x,S &y){
+	S temp;
+	temp = x;
+	x = y;
+	y = temp;
+}
+
 
 int main(){
 	int x, y;
